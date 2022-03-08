@@ -22,7 +22,6 @@ body {
   margin: 0 auto;
   /*background-image: url('./bg4.png');
   height: 100%;
-
   /* Center and scale the image nicely */
   /*background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +74,6 @@ hr{
   margin-right: 250px;
 }
 
-
 h1 {
     color: #fffefe;
     font-family: 'Roboto Condensed', sans-serif;
@@ -83,7 +81,74 @@ h1 {
     font-weight: 400;
     text-align: center;
 }
-
+/*Modal Styles*/
+.modal-bg1, .modal-bg2, .modal-bg3{
+  position: fixed;
+  width: 60%;
+  margin-left: 20%;
+  height: 80vh;
+  margin-top: 10vh;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #bccce0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: zero;
+  /* transition: visibility 0s, opacity 0.5s; */
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+.bg-active{
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+}
+.modal{
+  background-color: #f2f2f2;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.modal button{
+  padding: 10px 30px;
+  background-color: #0096c7;
+  color: white;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  border-radius: 5px;
+}
+a{
+  color: white;
+}
+.modal-title{
+  color: #0096c7;
+}
+.btn-close1, .btn-close2, .btn-close3{
+  background-color: #f2f2f2 !important;
+  border: 1px solid#0096c7 !important;
+  color: #0096c7 !important;
+}
+@media only screen and (max-width: 600px) {
+  .modal{
+    width: 300px;
+    
+  }
+  .modal-bg1, .modal-bg2, .modal-bg3{
+    height: 80vh;
+    width: 360px;
+    margin-left: 70px;
+  }
+}
 
 .card_image img{
   height: 160px;
@@ -253,7 +318,6 @@ and (max-width : 420px) {
 .wrapper{
   /*background-image: url('./bg4.png');
   height: 100%;
-
   /* Center and scale the image nicely */
   /*background-position: center;
   background-repeat: no-repeat;
@@ -386,5 +450,3 @@ and (max-width : 420px) {
     margin: 10px 0;
   }
 }
-
-
